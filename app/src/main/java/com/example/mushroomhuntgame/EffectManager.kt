@@ -25,16 +25,16 @@ class EffectManager (context: Context) {
 
     companion object {
 
-        private var instance: com.example.mushroomhuntgame.EffectManager? = null
+        private var instance: EffectManager? = null
 
 
-        fun init(context: Context): com.example.mushroomhuntgame.EffectManager {
+        fun init(context: Context): EffectManager {
             return instance ?: synchronized(this) {
                 instance ?: EffectManager(context).also { instance = it }
             }
         }
 
-        fun getInstance(): com.example.mushroomhuntgame.EffectManager {
+        fun getInstance(): EffectManager {
             return instance ?: throw IllegalStateException(
                 "MySignal must be initialized by calling init(context) before use."
             )
