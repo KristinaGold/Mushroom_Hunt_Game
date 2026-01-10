@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+
+    <VideoView
+        android:id="@+id/videoBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        />
+<!--    <ImageView-->
+<!--        android:id="@+id/background"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:contentDescription="@string/app_name"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        android:src="@drawable/background" />-->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#690F0E0E" />
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/centerGame"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/lane0"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img00"
+                    style="@style/CellFormat" />
+
+                <ImageView
+                    android:id="@+id/img01"
+                    style="@style/CellFormat" />
+
+                <ImageView
+                    android:id="@+id/img02"
+                    style="@style/CellFormat" />
+
+                <ImageView
+                    android:id="@+id/img03"
+                    style="@style/CellFormat" />
+
+                <ImageView
+                    android:id="@+id/img04"
+                    style="@style/CellFormat" />
+
+                <ImageView
+                    android:id="@+id/img05"
+                    style="@style/CellFormat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lane1"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img10"
+                    style="@style/CellFormat" />
+
+                <ImageView
+                    android:id="@+id/img11"
+                    style="@style/CellFormat" />
+
+                <ImageView
+                    android:id="@+id/img12"
+                    style="@style/CellFormat" />
+
+                <ImageView
+                    android:id="@+id/img13"
+                    style="@style/CellFormat" />
+
+                <ImageView
+                    android:id="@+id/img14"
+                    style="@style/CellFormat" />
+
+                <ImageView
+                    android:id="@+id/img15"
+                    style="@style/CellFormat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lane2"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img20"
+                    style="@style/CellFormat" />
+
+                <ImageView
+                    android:id="@+id/img21"
+                    style="@style/CellFormat" />
+
+                <ImageView
+                    android:id="@+id/img22"
+                    style="@style/CellFormat" />
+
+                <ImageView
+                    android:id="@+id/img23"
+                    style="@style/CellFormat" />
+
+                <ImageView
+                    android:id="@+id/img24"
+                    style="@style/CellFormat" />
+
+                <ImageView
+                    android:id="@+id/img25"
+                    style="@style/CellFormat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lane3"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img30"
+                    style="@style/CellFormat" />
+
+                <ImageView
+                    android:id="@+id/img31"
+                    style="@style/CellFormat" />
+
+                <ImageView
+                    android:id="@+id/img32"
+                    style="@style/CellFormat" />
+
+                <ImageView
+                    android:id="@+id/img33"
+                    style="@style/CellFormat" />
+
+                <ImageView
+                    android:id="@+id/img34"
+                    style="@style/CellFormat" />
+
+                <ImageView
+                    android:id="@+id/img35"
+                    style="@style/CellFormat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lane4"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img40"
+                    style="@style/CellFormat" />
+
+                <ImageView
+                    android:id="@+id/img41"
+                    style="@style/CellFormat" />
+
+                <ImageView
+                    android:id="@+id/img42"
+                    style="@style/CellFormat" />
+
+                <ImageView
+                    android:id="@+id/img43"
+                    style="@style/CellFormat" />
+
+                <ImageView
+                    android:id="@+id/img44"
+                    style="@style/CellFormat" />
+
+                <ImageView
+                    android:id="@+id/img45"
+                    style="@style/CellFormat" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/buttonPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/leftbutton"
+                style="@style/Widget.Material3.Button.IconButton.Outlined"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="50dp"
+                app:icon="@drawable/arrowleft"
+                app:iconGravity="textStart"
+                app:iconSize="70dp"
+                app:iconTint="@color/white"
+                app:strokeColor="#00000000"
+                app:strokeWidth="0dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/rightbutton"
+                style="@style/Widget.Material3.Button.IconButton.Outlined"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="50dp"
+                app:icon="@drawable/arrowright"
+                app:iconGravity="textStart"
+                app:iconSize="70dp"
+                app:iconTint="@color/white"
+                app:strokeColor="#00000000"
+                app:strokeWidth="0dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layoutDirection="ltr"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/scoreWord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/score"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/score_init"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal"
+            tools:ignore="RelativeOverlap">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/life1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/heart_red" />
+
+            <ImageView
+                android:id="@+id/life2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/heart_red" />
+
+            <ImageView
+                android:id="@+id/life3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/heart_red" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Mushroom Hunt Game</string>
+    <string name="score">SCORE: </string>
+    <string name="score_init">00</string>
+    <string name="game_over">GAME OVER</string>
+    <string name="mode_buttons">BUTTONS</string>
+    <string name="mode_sensor">SENSOR</string>
+    <string name="mode">MODE:</string>
+    <string name="game_name">MUSHROOM\nHUNT</string>
+    <string name="enter_player_name">Enter your name</string>
+    <string name="save">"SAVE &amp; CONTINUE"</string>
+    <string name="score_zero">Score: 0</string>
+    <string name="start">START</string>
+    <string name="top10">TOP 10</string>
+    <string name="fast_mode">FAST MODE</string>
+</resources>
