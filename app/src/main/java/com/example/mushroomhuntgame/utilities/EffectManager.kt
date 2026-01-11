@@ -122,6 +122,6 @@ class EffectManager private constructor(context: Context) {
             mp.isLooping = true
             mp.setVolume(0f, 0f)
         }
-        view.start()
+      //  view.start()
     }
 }

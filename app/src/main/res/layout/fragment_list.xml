@@ -12,6 +12,7 @@
         app:cardCornerRadius="20dp"
         app:cardElevation="0dp"
         app:cardPreventCornerOverlap="false"
+        android:padding="2dp"
         >
 
         <FrameLayout

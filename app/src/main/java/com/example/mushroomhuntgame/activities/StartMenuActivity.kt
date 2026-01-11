@@ -16,10 +16,8 @@ import com.example.mushroomhuntgame.utilities.hideSystemBars
 class StartMenuActivity : AppCompatActivity(){
 
     private lateinit var binding: ActivityStartBinding
-
     private lateinit var expandableContent : LinearLayout
     private lateinit var gameSpeedLayout : LinearLayout
-
     private lateinit var videoBackground : VideoView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -97,7 +95,6 @@ class StartMenuActivity : AppCompatActivity(){
 
     override fun onRestart() {
         super.onRestart()
-        videoBackground.start()
         EffectManager.getInstance().playBackgroundMusic(R.raw.opening_music)
         expandableContent.visibility = View.GONE
         gameSpeedLayout.visibility = View.INVISIBLE
@@ -105,7 +102,7 @@ class StartMenuActivity : AppCompatActivity(){
 
     override fun onResume() {
         super.onResume()
-       // EffectManager.getInstance().playBackgroundMusic(R.raw.opening_music)
+        videoBackground.start()
         hideSystemBars()
     }
 

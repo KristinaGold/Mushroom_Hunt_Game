@@ -56,7 +56,9 @@
             android:padding="8dp"
             android:gravity="center_vertical"
             android:elevation="4dp"
-            android:animateLayoutChanges="true">
+            android:animateLayoutChanges="true"
+            android:layoutDirection="ltr"
+            >
 
             <ImageView
             android:id="@+id/imgSettings"
@@ -105,7 +107,9 @@
             android:orientation="horizontal"
             android:visibility="invisible"
             android:animateLayoutChanges="true"
-            android:gravity="center">
+            android:gravity="center"
+            android:layoutDirection="ltr"
+            >
 
             <TextView
                 android:layout_width="wrap_content"

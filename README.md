@@ -86,5 +86,3 @@ Navigation: Fragment-based architecture for the Records screen.
 
 Maps: Google Maps SDK for Android.
 
-
-

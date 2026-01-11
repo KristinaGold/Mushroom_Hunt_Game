@@ -71,7 +71,7 @@ class GameManager(lifecycleScope: LifecycleCoroutineScope, speed: Long){
 
     private fun startGameTimer() {
         scope.launch {
-            while (!isPaused) {
+            while (isActive) {
                 delay(1000)
                 if (!isPaused) {
                     gameTimer++

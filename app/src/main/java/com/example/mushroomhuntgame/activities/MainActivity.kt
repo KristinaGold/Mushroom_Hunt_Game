@@ -95,6 +95,7 @@ class MainActivity : AppCompatActivity() , GameCallback {
         super.onResume()
         hideSystemBars()
 
+        videoBackground.start()
         gameManager.isPaused = false
         effectManager.resumeBackgroundMusic()
         if (gameType == GameProperties.GAME_TYPE_SENSORS)
