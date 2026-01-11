@@ -13,8 +13,8 @@
     <style name="Theme.MushroomHuntGame" parent="Base.Theme.MushroomHuntGame" />
 
     <style name="AppTheme.WindowTransition" parent="">
-        <item name="android:windowEnterAnimation">@anim/zoom_in_fade</item>
-        <item name="android:windowExitAnimation">@anim/stay_still</item>
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
     </style>
 
 

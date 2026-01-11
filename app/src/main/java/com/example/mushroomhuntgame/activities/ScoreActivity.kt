@@ -1,6 +1,7 @@
 package com.example.mushroomhuntgame.activities
 
 import android.Manifest
+import android.R
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
@@ -119,6 +120,7 @@ class ScoreActivity : AppCompatActivity() {
     private fun openNewWindow() {
         val intent = Intent(this, RecordsActivity::class.java)
         startActivity(intent)
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
         finish()
     }
 

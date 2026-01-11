@@ -186,6 +186,7 @@ class MainActivity : AppCompatActivity() , GameCallback {
             bundle.putString("TIME", gameManager.getFinalTime())
             intent.putExtra("BUNDLE", bundle)
             startActivity(intent)
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
             finish()
         }, 2000)
     }

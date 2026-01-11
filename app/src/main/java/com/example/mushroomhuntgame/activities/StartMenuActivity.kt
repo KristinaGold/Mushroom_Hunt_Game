@@ -85,8 +85,6 @@ class StartMenuActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        //EffectManager.getInstance().playBackgroundMusic(R.raw.lobby_music)
-
 
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
@@ -97,7 +95,6 @@ class StartMenuActivity : AppCompatActivity() {
 
     override fun onRestart() {
         super.onRestart()
-        //EffectManager.getInstance().playBackgroundMusic(R.raw.lobby_music)
         expandableContent.visibility = View.GONE
         gameSpeedLayout.visibility = View.INVISIBLE
     }
@@ -122,6 +119,7 @@ class StartMenuActivity : AppCompatActivity() {
         bundle.putLong(GameProperties.GAME_SPEED_KEY, speed)
         intent.putExtra("BUNDLE", bundle)
         startActivity(intent)
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
     }
 
 }
