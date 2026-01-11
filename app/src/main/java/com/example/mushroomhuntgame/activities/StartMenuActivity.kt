@@ -13,7 +13,7 @@ import com.example.mushroomhuntgame.databinding.ActivityStartBinding
 import com.example.mushroomhuntgame.utilities.EffectManager
 import com.example.mushroomhuntgame.utilities.hideSystemBars
 
-class StartMenuActivity : AppCompatActivity(){
+class StartMenuActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityStartBinding
     private lateinit var expandableContent : LinearLayout
@@ -75,15 +75,17 @@ class StartMenuActivity : AppCompatActivity(){
         }
 
         startButton.setOnClickListener {
+            EffectManager.getInstance().stopLobbyMusic()
             startGame(gameType, speed)
         }
 
         topTenButton.setOnClickListener{
+            EffectManager.getInstance().isInternalNavigation = true
             val intent = Intent(this, RecordsActivity::class.java)
             startActivity(intent)
         }
 
-        EffectManager.getInstance().playBackgroundMusic(R.raw.opening_music)
+        //EffectManager.getInstance().playBackgroundMusic(R.raw.lobby_music)
 
 
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
@@ -95,20 +97,22 @@ class StartMenuActivity : AppCompatActivity(){
 
     override fun onRestart() {
         super.onRestart()
-        EffectManager.getInstance().playBackgroundMusic(R.raw.opening_music)
+        //EffectManager.getInstance().playBackgroundMusic(R.raw.lobby_music)
         expandableContent.visibility = View.GONE
         gameSpeedLayout.visibility = View.INVISIBLE
     }
 
     override fun onResume() {
         super.onResume()
+        EffectManager.getInstance().isInternalNavigation = false
+        EffectManager.getInstance().startLobbyMusic(R.raw.lobby_music)
         videoBackground.start()
         hideSystemBars()
     }
 
     override fun onPause() {
         super.onPause()
-        EffectManager.getInstance().pauseBackgroundMusic()
+        EffectManager.getInstance().pauseLobbyMusic()
     }
 
     private fun startGame(gameType: Int, speed : Long) {

@@ -2,7 +2,6 @@ package com.example.mushroomhuntgame.utilities
 
 import android.content.Context
 import android.media.MediaPlayer
-import android.net.Uri
 import android.os.Build
 import android.os.Handler
 import android.os.Looper
@@ -122,6 +121,32 @@ class EffectManager private constructor(context: Context) {
             mp.isLooping = true
             mp.setVolume(0f, 0f)
         }
-      //  view.start()
+    }
+
+
+    private var lobbyPlayer: MediaPlayer? = null
+    var isInternalNavigation: Boolean = false
+
+    fun startLobbyMusic(soundResourceId: Int) {
+        if (lobbyPlayer == null) {
+            lobbyPlayer = MediaPlayer.create(contextRef.get(), soundResourceId)
+            lobbyPlayer?.isLooping = true
+            lobbyPlayer?.start()
+        } else if (!lobbyPlayer!!.isPlaying) {
+            lobbyPlayer?.start()
+        }
+    }
+
+    fun pauseLobbyMusic() {
+        if (!isInternalNavigation) {
+            lobbyPlayer?.pause()
+        }
+    }
+
+    fun stopLobbyMusic() {
+        lobbyPlayer?.stop()
+        lobbyPlayer?.release()
+        lobbyPlayer = null
+        isInternalNavigation = false
     }
 }
